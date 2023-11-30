@@ -1,0 +1,64 @@
+/*body{
+    background-color: aquamarine;
+}
+button{
+    background-color: pink;
+}*/
+/*Esto lo silencié volviéndolo comentario pq namas fue para testear si había linkeado correctamente ésta stylesheet a mi doc de "index.html", pero lo dejo para recordar q puede tener ésta práctica para futuros proyectos :)*/
+
+*{ /*Este "*{}" es codificación q indica q lo que este dentro de las llaves va ser styleado para TODO lo q ande en la página*/
+    padding: 0;
+    /*Elimina todo el relleno q viene en nuestra página*/
+    margin: 0;
+    /*Elimina los márgenes q vienen predeterminados*/
+    box-sizing: border-box;
+    /*Significa q el ancho y el alto de los elementos q tengamos, incluiran el padding y el margin indicado arriba*/
+} /*Se cierra el Selector Universal*/
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    color: #fff;
+}
+
+.main-image{
+    background: url('https://wallpaperaccess.com/full/30117.jpg'); /*Como podemos ver aquí, estoy empezando a usar las comillas sencillas además de las dobles (q he usado toda mi life)*/
+    background-position: center bottom; /*significa q esta imagen debe posicionarse en el centro superior*/
+    background-size: cover;
+    background-repeat: no-repeat;
+    /*Q cubra todo el espacio disponible q hay sin q se repita*/
+    width: 100%;
+    min-height: 100vh; /*Esto quiere decir q se va estirar al ancho al 100% y del alto cubriendo Toño lo posible*/
+    display: flex; /*Esta línea es para hacerle saber a la mamada q estamos trabajando con flexbox*/
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 0 1rem; /*Recordar q es para el rellenado de un elemento*/
+    /*1rem es equivalente a 16px*/
+    text-align: center;
+}
+
+.main-image h1{
+    font-size: 4rem;
+    margin-bottom: 1rem;
+}
+
+.main-image p{
+    font-size: 1.5rem;
+    margin-bottom: 3rem;
+}
+
+.main-image button{
+    background: none;
+    color: #fff;
+    border: 2px solid #fff;
+    border-radius: 3px;
+    padding: 1rem 2rem;
+    text-transform: uppercase; /*Esto vuelve el texto del botón a mayúsculas. Actually algo así ponen por ejemplo en los formularios tipo de meter nombre y te la ponen mayúsculas >:(*/
+    font-weight: bold;
+    cursor: pointer; /*Este es para q cuando pasemos el cursor sobre el botón, el cursor se va volver la manita de actually por detrás*/
+}
+
+.tachado{
+    text-decoration: line-through; /*Aki resolvemos el reto de tachar la palabrita, referenciando desde la clase q le pusimos a su "span", pero q es "span"?*/
+    /**/
+}
